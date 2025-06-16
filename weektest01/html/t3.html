@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background: rgb(0, 238, 255);
+        position: relative;
+        animation: move 5s linear infinite;
+    }
+
+    @keyframes move {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: 50%;
+        }
+    }
+
+    .hover-box {
+        width: 100px;
+        height: 100px;
+        background: coral;
+        transition: transform 0.3s;
+    }
+
+    .hover-box:hover {
+        transform: scale(1.2) rotate(10deg);
+    }
+
+    .color {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        background-color: bisque;
+        animation-name: color;
+        position: relative;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes color {
+        0% {
+            background-color: red;
+        }
+
+        25% {
+            background-color: yellow;
+
+        }
+
+        50% {
+            background-color: blue;
+
+        }
+
+        100% {
+            background-color: green;
+        }
+    }
+
+    h2 {
+        position: sticky;
+        top: 0;
+        background: aqua;
+        padding: 5px;
+
+    }
+</style>
+
+<body>
+    <p>
+        FITA is an <b>Online & Offline transformative</b>
+        <i>upskilling platform</i> for working tech
+        <s>& business</s> professionals.<sup>*</sup> &copy;
+    </p>
+
+    <hr>
+    <hr>
+
+    <h4> Table</h4>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th colspan="4">Book List</th>
+        </tr>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication Date</th>
+            <th>Pages</th>
+        </tr>
+        <tr>
+            <td>Book One</td>
+            <td rowspan="2"> A</td>
+            <td>2021</td>
+            <td>25000</td>
+        </tr>
+        <tr>
+            <td>Book Two</td>
+            <td>2022</td>
+            <td>30000</td>
+        </tr>
+        <tr>
+            <td>Book Three</td>
+            <td> B</td>
+            <td>2020</td>
+            <td>1800</td>
+        </tr>
+        <tr>
+            <td>Book Four</td>
+            <td> C</td>
+            <td>2023</td>
+            <td>22000</td>
+        </tr>
+    </table>
+
+    <hr>
+    <hr>
+
+    <h4>Form</h4>
+    <form>
+        Name: <input type="text" name="name"><br><br>
+        Age: <input type="number" name="age"><br><br>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+        Favorite Food:
+        <select>
+            <option>Pizza</option>
+            <option>Chinese</option>
+            <option>Indian</option>
+        </select><br><br>
+        <input type="checkbox"> Do you like to cook?<br>
+        Comments:<br><br>
+        <textarea></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    <hr>
+
+
+    <h4>list</h4>
+    <div style="display: flex;">
+        <ol type="A">
+            <li>Paris</li>
+            <li>Tokyo</li>
+            <li>London</li>
+            <li>New York</li>
+            <li>Rome</li>
+        </ol>
+
+        <ul style="list-style: square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Juice</li>
+        </ul>
+    </div>
+
+    <hr>
+    <hr>
+    <h4>Box ANI</h4>
+
+
+    <div class="box"></div>
+
+    <hr>
+    <hr>
+
+    <h4>Transform Hover</h4>
+
+    <div class="hover-box"></div>
+
+    <hr>
+    <hr>
+
+    <h4>Ani Color Chnage</h4>
+    <div class="color"></div>
+
+    <hr>
+    <hr>
+
+    <h4>audio</h4>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <video src="video.mp4" controls autoplay muted poster="poster.jpg" width="400">
+    </video>
+
+    <hr>
+    <hr>
+
+    <h4>sticky</h4>
+
+
+    <h2>Section 1</h2>
+    <p>Content...</p>
+
+    <h2>Section 2</h2>
+    <p>More content...</p>
+
+    <h2>Section 3</h2>
+    <p>Content...</p>
+
+    <h2>Section 4</h2>
+    <p>More content...</p>
+    <h2>Section 1</h2>
+    <p>Content...</p>
+
+    <h2>Section 5</h2>
+    <p>More content...</p>
+
+    <h2>Section 6</h2>
+    <p>Content...</p>
+
+    <h2>Section 7</h2>
+    <p>More content...</p>
+
+
+
+</body>
+
+</html>
